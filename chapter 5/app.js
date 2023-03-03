@@ -69,3 +69,49 @@ var item2qty = +prompt("Quantity of item 2");
 var shipping = 100;
 var total = (itemOnePrice*item1qty) + (itemTwoPrice*item2qty) +shipping;
 document.write("The total cost of your order is " + total);
+// q#8
+var totalMarks = 980;
+var marksObtained = 804;
+var percentage = (marksObtained/totalMarks)*100;
+document.write("<h1>"+ " Marks Obtained "+ "</h1>" + "</br>");
+document.write("Total Marks "+ totalMarks + "</br>");
+document.write("Marks Obtained "+ marksObtained + "</br>");
+document.write("Percentage " + percentage + "</br>");
+// Q#9
+var dollars = 10;
+var saudiRiyals = 25;
+var $rate = 285;
+var riyalRate = 80;
+var totalPkr = (dollars*$rate) + (saudiRiyals*80);
+document.write("<h1>" + " Currency Rate"+ "</h1>");
+document.write("<h2>"+"Total Currency in Pkr is "+ totalPkr +"</h2>")
+// q#10
+var add = 6;
+add = add + 5;
+add = add * 10;
+add = add / 2;
+document.write(add + "</br>");
+// q#11
+var currentYear = 2023;
+var birthYear = 1991;
+var age = currentYear - birthYear;
+document.write("Age Calculator: " + "</br>");
+document.write("Current Year: " + currentYear+ "</br>");
+document.write("Birth Year: " +birthYear+ "</br>");
+document.write("Your Age: " +age+ "</br>");
+// Q#12
+var r = 24;
+var pi = 3.142;
+var circumference = 2*pi*r;
+var areaOfCircle = pi*r*r
+document.write("Circumference of Circle : " +circumference+ "</br>");
+document.write("Area of Circle : " +areaOfCircle+ "</br>");
+// q#13
+var snack = "Chocolate Chips";
+var currentAge = 15;
+var expectedAge = 65;
+var perDaySnacks = 3;
+var totalDays = (expectedAge-currentAge)*365;
+var TotalSnackNeed = totalDays*perDaySnacks;
+document.write("You will need " + TotalSnackNeed + "chocolate chip to last of your age")
+
