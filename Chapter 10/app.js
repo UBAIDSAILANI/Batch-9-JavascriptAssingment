@@ -45,15 +45,54 @@ for (var i=1; i <= 15; i++){
  
     document.write(newCounting.push(i));
 }
-//q#7
-document.write("<h1>" + " Reverse: " + "</h1>")
-var newCounting = [];
-for (var i=0; i <= 10; i++){
-    var rever= document.write(newCounting.push(i));
-  document.write(newCounting.reverse())   
+
+// document.write("<h1>" + " Reverse: " + "</h1>")
+// var newCounting = [];
+// for (var i=0; i <= 10; i++){
+//     var rever= document.write(newCounting.push(i));
+//   document.write(newCounting.reverse())   
+// }
+// var even = [1,2,3,4,5,6,7,8];
+// if (even%2 == 0){
+//     document.write(even%2 == 0)
+//  console.log(even)   
+// }
+// q#7
+var bakery = ["cake", "apple pie", "cookie", "chips", "patties"];
+var search = prompt("What do you want to search?");
+var flag = false;
+for (var i=0; i<= bakery.length; i++){
+    if(search === bakery[i]){
+        document.write("<h1>"+ bakery[i] + "is available at Index " + [i] +  "</h1>")
+        flag = true;
+    }
 }
-var even = [1,2,3,4,5,6,7,8];
-if (even%2 === 0){
-    
-    
+if(flag === false){
+    document.write("<h1>"+ search +  " is Not available " +"</h1>")
+}
+// q#8
+var arr = [24, 53, 78, 91, 12];
+
+var min = arr[0];
+
+for(var i = 0; i < arr.length; i++){
+    if(min > arr[i]){
+        min = arr[i]
+    }
+}
+document.write("This is Minimum Number " + min)
+// Q#9
+var large = [0.1, 1,21,33,433,987,66];
+var max = large[0];
+for(var i=0; i < large.length; i++){
+    if(max < large[i]){
+        max = large[i]
+    }
+}
+document.write("This is max number " + max)
+// q#10
+var num = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20];
+var fifth = (5);
+for(var i=0; i < num.length; i++){
+    document.write("This is mutiply range of 5 to 100 " + fifth*num[i] +"<br/>")
 }
